@@ -1,0 +1,31 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    padding: 0;
+    width: 100%;
+    font-family: "Roboto","Hiragino Kaku Gothic ProN","Meiryo", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.mdl-button,
+.mdl-textfield__input,
+.mdl-list__item,
+.mdl-tooltip {
+    font-family: "Roboto","Hiragino Kaku Gothic ProN","Meiryo", sans-serif;
+}
+
+iframe {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 0px;
+}

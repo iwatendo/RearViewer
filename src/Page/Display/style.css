@@ -1,0 +1,34 @@
+﻿
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sbj-cast-visitor-contents {
+    width: 100%;
+    height: 100%;
+}
+
+#sbj-video {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.3);
+}
+
+#sbj-cast-visitor-message-port{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+}
+
+#sbj-cast-visitor-message{
+    position: absolute;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 20px);
+    color: #555;
+}

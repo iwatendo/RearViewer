@@ -1,0 +1,18 @@
+
+.sbj-mobile-qrcode-frame{
+    position: absolute;
+    top: calc(50% - 170px);
+    left: calc(50% - 170px);
+    width: 340px;
+    height: 340px;
+}
+
+.sbj-mobile-qrcode-box{
+    width: 340px;
+    height: 340px;
+}
+
+.sbj-display{
+    width: 100%;
+    height: 100%;
+}

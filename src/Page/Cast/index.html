@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Skybeje-Cast</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href='../image/favicon.ico'>
+    <script src='/lib/forcedtimer.js'></script>
+    <script src='/lib/skyway.min.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <link rel='stylesheet' href='../common.css?v={version}' />
+    <link rel='stylesheet' href='style.css?v={version}' />
+</head>
+
+<body>
+
+    <ons-splitter>
+        <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+            <ons-page>
+                <ons-list-title>Skybeje</ons-list-title>
+                <ons-list>
+                    <ons-list-item id="sbj-cast-instance-stop" tappable>
+                        <ons-icon class="list-item__icon" icon="md-close"></ons-icon>
+                        Quit
+                    </ons-list-item>
+                </ons-list>
+            </ons-page>
+        </ons-splitter-side>
+        <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+    </ons-splitter>
+
+    <template id="home.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button onclick="document.getElementById('menu').open()">
+                        <ons-icon icon="md-menu"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">
+                    Skybeje
+                </div>
+            </ons-toolbar>
+            <section id="sbj-bottom-toolbar">
+                <ons-button modifier="large" id="sbj-cast-instance-start" disabled>To display</ons-button>
+            </section>
+            <div class="sbj-video-content">
+                <video id='sbj-video-preview' class='sbj-video-preview' autoplay="true" playsinline="true" muted></video>
+                <div id="sbj-item-layer">
+                    <div id="sbj-cursor-layer">
+                        <!-- React -->
+                    </div>
+                </div>
+            </div>
+        </ons-page>
+    </template>
+
+    <script src="/lib/react.min.js"></script>
+    <script src="/lib/react-dom.min.js"></script>
+    <script src="./bundle.js?v={version}"></script>
+
+</body>
+
+</html>

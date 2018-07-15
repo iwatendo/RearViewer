@@ -1,0 +1,10 @@
+
+#qrbase {
+    display: flex;
+    padding: 12px;
+}
+
+#qrcode {
+    background-color: whitesmoke;
+    margin: 20px auto;
+}
