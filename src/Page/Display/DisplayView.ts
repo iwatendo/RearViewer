@@ -25,7 +25,7 @@ export class DisplayView extends AbstractServiceView<DisplayController> {
      * 「接続中」の表示を消す
      */
     public MessageHide(){
-        document.getElementById('sbj-cast-visitor-message-port').hidden = true;
+        document.getElementById('message-port').hidden = true;
     }
 
 }

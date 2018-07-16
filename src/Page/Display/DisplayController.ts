@@ -6,7 +6,6 @@ import DisplayModel from "./DisplayModel";
 import { DisplayReceiver } from "./DisplayReceiver";
 import LinkUtil from "../../Base/Util/LinkUtil";
 import SWRoom, { SWRoomMode } from "../../Base/WebRTC/SWRoom";
-import StreamUtil from "../../Base/Util/StreamUtil";
 
 
 export default class DisplayController extends AbstractServiceController<DisplayView, DisplayModel> {
@@ -43,8 +42,8 @@ export default class DisplayController extends AbstractServiceController<Display
 
     //  Peerエラー
     public OnPeerError(err: Error) {
-        document.getElementById('sbj-cast-visitor-message-port').hidden = false;
-        document.getElementById('sbj-cast-visitor-message').textContent = "接続に失敗、またはライブキャストは終了しています";
+        document.getElementById('message-port').hidden = false;
+        document.getElementById('message').textContent = "接続に失敗、またはライブキャストは終了しています";
     }
 
 
